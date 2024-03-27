@@ -1,0 +1,1 @@
+This is a simple web page using React to showcase most common tips as a Reina player against different opponents. Work in progress..
