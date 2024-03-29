@@ -26,5 +26,8 @@ h1 {
 }
 
 .gif-image {
-  width:300px; 
+  width:400px; 
+}
+.gif-image.zoomed {
+  width: 800px; /* or any size you want when zoomed */
 }
