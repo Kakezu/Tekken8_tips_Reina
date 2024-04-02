@@ -1,51 +1,75 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-//import gif from '../images/gif.png'
-import tekken8_gif from '../images/tekken8_gif.gif'
-import ZoomableImage from './ZoomableImage'
+import placeholder_video from "../images/placeholder_video.png"
 import Reina_Azucena from "../images/reina_Azucena.mp4"
+import Reina_Law from "../images/Reina_v_Law.mp4"
+import Reina_Law2 from "../images/Reina_v_Law2.mp4"
+import Reina_Leroy from "../images/Reina_v_Leroy.mp4"
+import Reina_Leroy2 from "../images/Reina_v_Leroy2.mp4"
 
 export default function FrontPage() {
   return (
     <>
-      <h1>Reina Moves to Use & Avoid Against Certain Characters</h1>
+      <h1>Tekken 8 Punishment Guide</h1>
+      <p>In this page I will use Reina to punish different opponents but all the situations are applicable to every character in Tekken 8.</p>
       <section className='container'>
         <h1>Azucena (SSR)</h1>
-        <div className='gif-container'>
-          <div className='gif-flex'>
+        <div className='mp4-container'>
+          <div className='mp4-flex'>
           <ReactPlayer 
             url={Reina_Azucena} 
             controls={true} 
             loop={true} 
             width={500} 
+            height={285}
             />
             <p>Azucena doing her weird sound, block after low and punish the -15</p>
           </div>
-          <div className='gif-flex'>
-          <ReactPlayer url={Reina_Azucena} controls={true} loop={true} width={500} />
-            <p>Watch out Alisa's Chainsaw shenanigans</p>
+          <div className='mp4-flex'>
+          {/* <ReactPlayer url={Reina_Azucena} controls={true} loop={true} width={500} height={285} /> */}
+          <img className='placeholder_video' src={placeholder_video} alt="placeholder"/>
+            <p>TBD</p>
           </div>
-          <div className='gif-flex'>
-          <ReactPlayer url={Reina_Azucena} controls={true} loop={true} width={500} />
-            <p>Watch out Alisa's Chainsaw shenanigans</p>
+          <div className='mp4-flex'>
+          {/* <ReactPlayer url={Reina_Azucena} controls={true} loop={true} width={500} height={285} /> */}
+          <img className='placeholder_video' src={placeholder_video} alt="placeholder"/>
+            <p>TBD</p>
           </div>
         </div>
       </section>
 
       <section className='container'>
-        <h1>Asuka (SSL)</h1>
-        <div className='gif-container'>
-          <div className='gif-flex'>
-          <ZoomableImage src={tekken8_gif} alt="gif of opponent's movements"/>
-            <p>Watch out Asuka's Low Kickshenaniganst</p>
+        <h1>Law (SSR)</h1>
+        <div className='mp4-container'>
+        <div className='mp4-flex'>
+          <ReactPlayer url={Reina_Law} controls={true} loop={true} width={500} height={285} />
+            <p>Law's 3+4, 4 is launch punishable by crouching</p>
           </div>
-          <div className='gif-flex'>
-          <ZoomableImage src={tekken8_gif} alt="gif of opponent's movements"/>
-            <p>Watch out Asuka's Low Kick shenanigans</p>
+          <div className='mp4-flex'>
+          <ReactPlayer url={Reina_Law2} controls={true} loop={true} width={500} height={285} />
+            <p>Law's d2+3 is -15 and launch punishable</p>
           </div>
-          <div className='gif-flex'>
-          <ZoomableImage src={tekken8_gif} alt="gif of opponent's movements"/>
-            <p>Watch out Asuka's Low Kick shenanigans</p>
+          <div className='mp4-flex'>
+          <img className='placeholder_video' src={placeholder_video} alt="placeholder"/>
+            <p>TBD</p>
+          </div>
+        </div>
+      </section>
+
+      <section className='container'>
+        <h1>Leroy (SSL)</h1>
+        <div className='mp4-container'>
+        <div className='mp4-flex'>
+          <ReactPlayer url={Reina_Leroy} controls={true} loop={true} width={500} height={285} />
+            <p>Leroy's b2,2 is -15 and launch punishable</p>
+          </div>
+          <div className='mp4-flex'>
+          <ReactPlayer url={Reina_Leroy2} controls={true} loop={true} width={500} height={285} />
+            <p>Watch out Leroy's db3+4. Especially after Reina's ff+2</p>
+          </div>
+          <div className='mp4-flex'>
+          <img className='placeholder_video' src={placeholder_video} alt="placeholder"/>
+            <p>TBD</p>
           </div>
         </div>
       </section>
