@@ -6,6 +6,7 @@ import Reina_Law from "../images/Reina_v_Law.mp4"
 import Reina_Law2 from "../images/Reina_v_Law2.mp4"
 import Reina_Leroy from "../images/Reina_v_Leroy.mp4"
 import Reina_Leroy2 from "../images/Reina_v_Leroy2.mp4"
+import Reina_Raven from "../images/Reina_v_Raven.mp4"
 
 export default function FrontPage() {
   return (
@@ -66,6 +67,24 @@ export default function FrontPage() {
           <div className='mp4-flex'>
           <ReactPlayer url={Reina_Leroy2} controls={true} loop={true} width={500} height={285} />
             <p>Watch out Leroy's db3+4. Especially after Reina's ff+2</p>
+          </div>
+          <div className='mp4-flex'>
+          <img className='placeholder_video' src={placeholder_video} alt="placeholder"/>
+            <p>TBD</p>
+          </div>
+        </div>
+      </section>
+
+      <section className='container'>
+        <h1>Raven (SSL)</h1>
+        <div className='mp4-container'>
+        <div className='mp4-flex'>
+          <ReactPlayer url={Reina_Raven} controls={true} loop={true} width={500} height={285} />
+            <p>Raven's soulzone + 1, 4 is -14</p>
+          </div>
+          <div className='mp4-flex'>
+          <img className='placeholder_video' src={placeholder_video} alt="placeholder"/>
+            <p>TBD</p>
           </div>
           <div className='mp4-flex'>
           <img className='placeholder_video' src={placeholder_video} alt="placeholder"/>
